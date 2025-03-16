@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Drag and drop styles */
+.dragging {
+  opacity: 0.5;
+  cursor: grabbing;
+}
+
+.can-drop {
+  background-color: rgba(0, 255, 0, 0.1);
+  border: 2px dashed #4ade80;
+}
+
+.no-drop {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 2px dashed #ef4444;
+}
+
+/* Transition effects */
+.event-cell {
+  transition: all 0.2s ease-in-out;
+}
+
+.day-cell {
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
